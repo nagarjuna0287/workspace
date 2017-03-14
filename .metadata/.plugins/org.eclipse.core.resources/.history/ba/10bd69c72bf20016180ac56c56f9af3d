@@ -1,0 +1,14 @@
+package com.saibersys.basic;
+
+import java.util.Scanner;
+
+public class MiddleChar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		String st=sc.nextLine();
+		int count=st.lenght();
+	}
+
+}

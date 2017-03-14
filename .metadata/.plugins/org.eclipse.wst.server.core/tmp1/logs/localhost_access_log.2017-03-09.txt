@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [09/Mar/2017:00:00:06 -0600] "GET /ServletProject/UrlPattern2?user=Pinky HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [09/Mar/2017:00:01:00 -0600] "GET /ServletProject/UrlPattern1?username=baby HTTP/1.1" 405 1108
+0:0:0:0:0:0:0:1 - - [09/Mar/2017:00:01:26 -0600] "GET /ServletProject/UrlPattern1?username=baby HTTP/1.1" 405 1108
+0:0:0:0:0:0:0:1 - - [09/Mar/2017:00:01:27 -0600] "GET /ServletProject/UrlPattern1?username=baby HTTP/1.1" 405 1108
+0:0:0:0:0:0:0:1 - - [09/Mar/2017:00:01:30 -0600] "GET /ServletProject/UrlPattern1?username=baby HTTP/1.1" 405 1108
+0:0:0:0:0:0:0:1 - - [09/Mar/2017:00:02:02 -0600] "GET /ServletProject/UrlPattern1?username=baby HTTP/1.1" 200 49
+0:0:0:0:0:0:0:1 - - [09/Mar/2017:00:02:04 -0600] "GET /ServletProject/UrlPattern2?user=baby HTTP/1.1" 200 11

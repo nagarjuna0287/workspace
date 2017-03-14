@@ -1,0 +1,26 @@
+package com.saibersys.basic;
+
+import java.util.Scanner;
+
+public class MiddleChar {
+
+	private static Scanner sc;
+
+	public static void main(String[] args) {
+		sc = new Scanner(System.in);
+		System.out.println("Enter the string name:");
+		String st=sc.nextLine();
+		System.out.println(st);
+		/*int count=st.length();
+		int n1,n2,k;
+		while(count!=0){
+			if(count%2==0){
+				n1=count/2;
+				n2=n1+1;
+				System.out.println("Middle characters are:"+count);
+			}
+			
+		}*/
+	}
+
+}

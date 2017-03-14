@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Goole Search</title>
+</head>
+<body>
+Enter text to search<input type="text" name="search"></input>
+</body>
+</html>

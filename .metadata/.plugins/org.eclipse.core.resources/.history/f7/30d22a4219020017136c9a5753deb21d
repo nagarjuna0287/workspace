@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LoginPage</title>
+</head>
+<body>
+<form action="Servlet1" method="post">
+Username:<input type=text name="uname"></input>
+<br></br>
+Password:<input type=password name="pwd"></input>
+<br></br>
+<input type=submit value=Submit >
+</form>
+</body>
+</html>

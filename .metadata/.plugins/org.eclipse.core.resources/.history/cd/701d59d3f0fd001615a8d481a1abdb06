@@ -1,0 +1,25 @@
+package in.company.jdbc;
+
+import java.io.*;
+
+public class WordToPdf {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		//File f=new File("F:\\arjun.txt");
+		FileInputStream fis =new FileInputStream("F:\\arjun.txt");
+		FileOutputStream fos=new FileOutputStream("F:\\arjun.doc");
+		int i=0;  
+	    while((i=fis.read())!=-1)
+	    {  
+	    	fos.write(i);
+	      /*char c=(char)i;
+	      System.out.print(c);  
+	    	*/
+	   }	
+	    
+	    }
+	      
+	}
+
+

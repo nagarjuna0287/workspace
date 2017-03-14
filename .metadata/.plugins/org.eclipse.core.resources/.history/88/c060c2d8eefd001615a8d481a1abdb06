@@ -1,0 +1,26 @@
+package in.company.jdbc;
+
+import java.io.BufferedInputStream;
+import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class WordToPdf {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		//File f=new File("F:\\arjun.txt");
+		FileInputStream fis =new FileInputStream("F:\\arjun.txt");
+		FileOutputStream fos=new FileOutputStream("F:\\arjun.pdf");
+		int i=0;  
+	    while((i=fis.read())!=-1)
+	    {  
+	      System.out.print((char)i);  
+	   }	
+	    
+	    }
+	      
+	}
+
+

@@ -1,0 +1,8 @@
+package com.saibersys.basic;
+
+public class Array {
+public static void main(String ar[]){
+	int arr[]=new int[5];
+	arr={1,85,56,85,633}; 
+}
+}

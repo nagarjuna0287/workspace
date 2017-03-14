@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LoginPage</title>
+</head>
+<body>
+<h2>Welcome to My life</h2>
+<form action="LoginServlet" method="post">
+Username:<input type="hidden" name="uname"></input>
+<br></br>
+Password:<input type=password name="pwd"></input>
+<br></br>
+<input type=submit value=Submit >
+</form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+package com.mycompany.in;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.*;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/RetriveData")
+public class RetriveData extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	 private static final String USERNAME = "system";
+     private static final String PASSWORD = "system";
+	Connection con;
+	//Statement stmt;
+	@Override
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		super.init();
+	}
+	/*@Override
+	
+	public void init() throws ServletException {
+	try {
+		Class.forName("oracle.jdbc.OracleDriver");
+	con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",USERNAME,PASSWORD);
+	} catch (ClassNotFoundException | SQLException e) {
+		e.printStackTrace();
+	}
+	
+	}*/
+	@Override
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+			try {
+				Class.forName("oracle.jdbc.OracleDriver");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",USERNAME,PASSWORD);
+			
+			
+			Statement stmt=con.createStatement();
+			response.setContentType("text/html");	
+			PrintWriter out=response.getWriter();
+				//String name=request.getParameter("sname");
+				//out.print(name);
+			
+					ResultSet rs= stmt.executeQuery("select * from student");
+					while(rs.next()){
+						out.println(rs.getString(1));
+				} 
+		}
+		catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+}
+
+	/*@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	}*/
+
+}
+
