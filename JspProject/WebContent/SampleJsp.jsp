@@ -19,6 +19,7 @@ int triangle(int l,int b,int h){
 out.print("Mr."+name); %>
 <br></br>
 <%="Your Password is:"+request.getParameter("pwd") %>
+
 Welcome, ${param.name}
 </body>
 </html>
